@@ -1,0 +1,43 @@
+<ul class="tasks tasks--{{this.[0].category}}-category">
+    <h3 class="global-list__category-title">{{this.[0].category}}</h3>
+    {{#each this}}
+    <li id="{{id}}" class="tasks__item tasks__item--{{category}} tasks__item--{{priority}}-status">
+        <div class="tasks__remove">
+            <div class="tasks__target"></div>
+                <span class="icon icon-trash"></span>
+        </div>
+        <div class="tasks__date">
+            {{#if deadline.overdue}}
+
+                <p class="overdue"><span class="number">{{deadline.day}}</span>{{deadline.month}}</p>
+
+                {{else}}
+
+                <p><span class="number">{{deadline.day}}</span>{{deadline.month}}</p>
+
+                {{/if}}
+        </div>
+        <div class="tasks__content">
+            <div class="tasks__content-box">
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+        </div>
+        <div class="tasks__edit">
+            <button class="add-to-daily-btn" title="Add to daily">
+                <span class="icon-arrows-up"></span>
+            </button>
+            <button class="edit-btn" title="Edit task">
+                <span class="icon-edit"></span>
+            </button>
+        </div>
+        <div class="tasks__disabler"></div>
+        <div class="tasks__status">
+            <a href="/timer" title="Go to timer">
+                <span class="icon icon-tomato"></span>
+                <span class="number">{{estimation}}</span>
+            </a>
+        </div>
+    </li>
+    {{/each}}
+</ul>

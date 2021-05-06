@@ -1,0 +1,111 @@
+.global-list__content--remove .page-tabs__links {
+  margin-top: 28px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .global-list__content--remove .page-tabs__links {
+    margin-top: 0;
+  }
+}
+.global-list__content--remove .tasks__item {
+  border: none;
+}
+.global-list__content--remove .tasks__content {
+  padding-left: 11px;
+}
+.global-list__content--remove .tasks__remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 7.02%;
+  min-width: 86px;
+  position: relative;
+  background-color: #C8C8C8;
+}
+@media screen and (max-width: 1279px) {
+  .global-list__content--remove .tasks__remove {
+    min-width: 114px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .global-list__content--remove .tasks__remove {
+    min-width: 101px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .global-list__content--remove .tasks__remove {
+    min-width: 84px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .global-list__content--remove .tasks__remove {
+    min-width: 80px;
+  }
+}
+.global-list__content--remove .tasks__remove .icon {
+  color: #ffffff;
+  font-size: 37px;
+}
+@media screen and (max-width: 1279px) {
+  .global-list__content--remove .tasks__remove .icon {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .global-list__content--remove .tasks__remove .icon {
+    font-size: 40px;
+  }
+}
+.global-list__content--remove .tasks--hobby-category {
+  border-color: #B470D0;
+}
+.global-list__content--remove .tasks--hobby-category .tasks__remove {
+  background-color: #B470D0;
+}
+.global-list__content--remove .tasks--sport-category {
+  border-color: #E16C65;
+}
+.global-list__content--remove .tasks--sport-category .tasks__remove {
+  background-color: #E16C65;
+}
+.global-list__content--remove .tasks--work-category {
+  border-color: #FFB200;
+}
+.global-list__content--remove .tasks--work-category .tasks__remove {
+  background-color: #FFB200;
+}
+.global-list__content--remove .tasks--education-category {
+  border-color: #59ABE3;
+}
+.global-list__content--remove .tasks--education-category .tasks__remove {
+  background-color: #59ABE3;
+}
+.global-list__content--remove .tasks--other-category {
+  border-color: #00D4D9;
+}
+.global-list__content--remove .tasks--other-category .tasks__remove {
+  background-color: #00D4D9;
+}
+.global-list__content--remove .right-col {
+  margin-top: -38px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .global-list__content--remove .right-col {
+    display: block;
+    width: 100%;
+    margin-top: -9px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .global-list__content--remove .left-col {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .global-list__content--remove .page-tabs__links {
+    flex-direction: column-reverse;
+  }
+}

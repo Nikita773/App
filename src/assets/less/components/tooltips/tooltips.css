@@ -1,0 +1,27 @@
+.ui-tooltip {
+  display: inline-block;
+  position: absolute;
+  left: -1em;
+  z-index: 999;
+  width: max-content;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 0.2rem;
+  background: #dbeaf5;
+  font-size: 11px;
+  color: #3c5162;
+  font-weight: 700;
+}
+.ui-tooltip::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 15px;
+  z-index: 999;
+  height: 0;
+  width: 0;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-bottom: 0.4rem solid #dbeaf5;
+}

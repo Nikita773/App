@@ -1,0 +1,431 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  .media-tablet-landscape({
+    align-items: flex-start;
+    overflow-y:scroll;
+    overflow-x:hidden;
+  });
+  .media-portreit({
+    align-items: flex-start;
+    overflow-y:scroll;
+    overflow-x:hidden;
+  });
+  .media-phone-landscape({
+    align-items: flex-start;
+    overflow-y:scroll;
+    overflow-x:hidden;
+  });
+}
+.popup {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 630px;
+  margin: 0 auto;
+  padding: 30px 45px 15px;
+  background: @madison;
+
+  .media-tablet({
+    max-width: 550px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  });
+  .media-tablet-landscape({
+    max-width: 550px;
+    margin-top: 40px;
+    margin-bottom: 140px;
+  });
+  .media-portreit({
+    max-width: 100%;
+    height: 100vh;
+    min-height: 670px;
+    padding-top: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+  });
+  .media-phone-landscape({
+    max-width: 100%;
+    height: 100vh;
+    min-height: 730px;
+    padding-top: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+  });
+
+  .popup__form {
+    .media-tablet({
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 90%;
+    });
+    .media-tablet-landscape({
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 90%;
+    });
+    .media-portreit({
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 80%;
+      padding-top: 20px;
+    });
+    .media-phone-landscape({
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 80%;
+      padding-top: 50px;
+    });
+  }
+
+  h1 {
+    .media-tablet({
+      font-size: 28px;
+    });
+  }
+
+  &--remove-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 70px;
+
+    .buttons {
+        padding: 0;
+    }
+  }
+
+  &--disabled {
+    display: none;
+  }
+
+  .popup__title {
+    color: @white;
+    margin-bottom: 13px;
+    text-align: center;
+  }
+
+  .popup__controls {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 15px;
+
+    .media-phone-landscape({
+      top: 35px;
+    });
+
+    .left-col {
+      .popupColSettings(flex-start)
+    }
+    .right-col {
+      .popupColSettings(flex-end)
+    }
+
+    .btn {
+      font-size: 20px;
+      margin-left: 14px;
+      color: @nepal;
+      .media-portreit({
+        font-size: 29px;
+      });
+      .media-phone-landscape({
+        font-size: 29px;
+      });
+
+      &:hover {
+        color: @spray;
+      }
+
+      &--remove {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .popup__message {
+    text-align: center;
+    color: @nepal;
+    margin-top: -60px;
+  }
+
+  .popup__item {
+    margin-bottom: 28px;
+
+    &--bordered {
+      border-bottom: 1px solid @slate;
+      padding-bottom: 8px;
+    }
+
+    .caption {
+      color: @white;
+      margin-bottom: 10px;
+    }
+
+    .popup__estimation {
+      .estimation-icon {
+        display: inline-block;
+        width: 21px;
+        height: 19px;
+        background: url("../../../images/empty-tomato.svg") no-repeat center center;
+        cursor: pointer;
+
+        &.checked {
+          background: url("../../../images/fill\ tomato.svg") no-repeat center center;
+        }
+      }
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      height: 30px;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid @slate;
+      font-size: 16px;
+      color: @white;
+
+      &::placeholder {
+        color: @nepal;
+        opacity: 1;
+      }
+    }
+
+    .radio-label {
+      color: @nepal;
+
+      &:hover {
+        color: @spray;
+      }
+      &:before {
+        background: @nepal;
+      }
+      &--work:hover::before {
+        background: @workColor;
+      }
+      &--education:hover::before {
+        background: @educationColor;
+      }
+      &--hobby:hover::before {
+        background: @hobbyColor;
+      }
+      &--sport:hover::before {
+        background: @sportColor;
+      }
+      &--other:hover::before {
+        background: @otherColor;
+      }
+      &--urgent:hover::before {
+        background: @urgentColor;
+      }
+      &--high:hover::before {
+        background: @highColor;
+      }
+      &--middle:hover::before {
+        background: @middleColor;
+      }
+      &--low:hover::before {
+        background: @lowColor;
+      }
+    }
+
+    input[type="radio"]:checked + .radio-label--work:before {
+      background: @workColor;
+    }
+    input[type="radio"]:checked + .radio-label--education:before {
+      background: @educationColor;
+    }
+    input[type="radio"]:checked + .radio-label--hobby:before {
+      background: @hobbyColor;
+    }
+    input[type="radio"]:checked + .radio-label--sport:before {
+      background: @sportColor;
+    }
+    input[type="radio"]:checked + .radio-label--other:before {
+      background: @otherColor;
+    }
+    input[type="radio"]:checked + .radio-label--urgent:before {
+      background: @urgentColor;
+    }
+    input[type="radio"]:checked + .radio-label--high:before {
+      background: @highColor;
+    }
+    input[type="radio"]:checked + .radio-label--middle:before {
+      background: @middleColor;
+    }
+    input[type="radio"]:checked + .radio-label--low:before {
+      background: @lowColor;
+    }
+
+    input[type="radio"]:checked,
+    input[type="radio"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+    }
+
+    input[type="radio"]:checked + .radio-label,
+    input[type="radio"]:not(:checked) + .radio-label {
+      position: relative;
+      padding-left: 24px;
+      margin-right: 5px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+
+      .media-tablet({
+        margin-right: 20px;
+      });
+      .media-portreit({
+        margin-right: 13px;
+      });
+    }
+
+    input[type="radio"]:checked + .radio-label {
+      color: @white;
+    }
+
+    input[type="radio"]:checked + .radio-label:before,
+    input[type="radio"]:not(:checked) + .radio-label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 17px;
+      height: 17px;
+      border-radius: 100%;
+    }
+
+    input[type="radio"]:checked + .radio-label:after,
+    input[type="radio"]:not(:checked) + .radio-label:after {
+      content: "";
+      box-sizing: border-box;
+      width: 9px;
+      height: 9px;
+      background: transparent;
+      border: 2px solid @madison;
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      border-radius: 100%;
+      transition: all 0.2s ease;
+    }
+
+    input[type="radio"]:not(:checked) + .radio-label:after {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    input[type="radio"]:checked + .radio-label:after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .date-picker {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #425869;
+    color: @nepal;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+  }
+}
+
+
+div.pomidoros{
+  display: inline-block;
+}
+
+input.pomidoro{
+  display: none;
+}
+
+label.pomidoro {
+  position: relative;
+  float: right;
+  padding: 10px 0px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+input.pomidoro:checked ~ label.pomidoro:before {
+  width: 21px;
+  height: 19px;
+  background: url("../../../images/fill\ tomato.svg") no-repeat center center;
+}
+
+label.pomidoro:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 21px;
+  height: 19px;
+  background: url("../../../images/empty-tomato.svg") no-repeat center center;
+}
+
+.rev-box{
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: all .25s;
+}
+
+textarea.review{
+  background: #222;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #EEE;
+}
+
+label.review{
+  display: block;
+  transition:opacity .25s;
+}
+
+
+
+input.pomidoro:checked ~ .rev-box{
+  height: 125px;
+  overflow: visible;
+}
+
+
+.estimation label:before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  background: url("../../../images/empty-tomato.svg") no-repeat center center;
+}
+.estimation input {
+  display: none;
+}
+.estimation input:checked ~ label:before, 
+.estimation:not(:checked) > label:hover:before, 
+.estimation:not(:checked) > label:hover ~ label:before {
+  background: url("../../../images/fill\ tomato.svg") no-repeat center center;
+}

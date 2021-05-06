@@ -1,0 +1,103 @@
+/* helpers */
+.left-col {
+  display: none;
+  float: left;
+}
+.left-col > a:nth-child(1) {
+  padding-left: 0;
+}
+.remove-mode .global-list .page-tabs__content {
+  margin-top: 50px;
+}
+.remove-mode .left-col {
+  display: block;
+}
+.remove-mode .tasks__date {
+  display: none;
+}
+.remove-mode .menu__link--trash {
+  color: #ffffff;
+}
+.remove-mode .menu__list .menu__link.menu__link--trash .trash-count {
+  opacity: 1;
+}
+.remove-mode .tasks__item {
+  border-left: none;
+}
+.remove-mode .tasks__item .tasks__remove {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 7.02%;
+  min-width: 86px;
+  display: flex;
+  position: relative;
+  background-color: #C8C8C8;
+}
+@media screen and (max-width: 1279px) {
+  .remove-mode .tasks__item .tasks__remove {
+    min-width: 114px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .remove-mode .tasks__item .tasks__remove {
+    min-width: 101px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .remove-mode .tasks__item .tasks__remove {
+    min-width: 84px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .remove-mode .tasks__item .tasks__remove {
+    min-width: 80px;
+  }
+}
+.remove-mode .tasks__item .tasks__remove .icon {
+  color: #ffffff;
+  font-size: 37px;
+}
+@media screen and (max-width: 1279px) {
+  .remove-mode .tasks__item .tasks__remove .icon {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .remove-mode .tasks__item .tasks__remove .icon {
+    font-size: 40px;
+  }
+}
+.remove-mode .tasks__item--hobby {
+  border-color: #B470D0;
+}
+.remove-mode .tasks__item--hobby .tasks__remove {
+  background-color: #B470D0;
+}
+.remove-mode .tasks__item--sport {
+  border-color: #E16C65;
+}
+.remove-mode .tasks__item--sport .tasks__remove {
+  background-color: #E16C65;
+}
+.remove-mode .tasks__item--work {
+  border-color: #FFB200;
+}
+.remove-mode .tasks__item--work .tasks__remove {
+  background-color: #FFB200;
+}
+.remove-mode .tasks__item--education {
+  border-color: #59ABE3;
+}
+.remove-mode .tasks__item--education .tasks__remove {
+  background-color: #59ABE3;
+}
+.remove-mode .tasks__item--other {
+  border-color: #00D4D9;
+}
+.remove-mode .tasks__item--other .tasks__remove {
+  background-color: #00D4D9;
+}
+.remove-mode .tasks__item .tasks__content {
+  padding-left: 11px;
+}

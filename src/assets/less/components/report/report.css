@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .section-report__tabs {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .section-report__tabs {
+    padding-top: 30px;
+  }
+}
+.section-report__tabs .page-tabs--internal {
+  margin-bottom: 50px;
+}
+.section-report__tabs .page-tabs__links {
+  text-align: center;
+}
+.page-tabs__graph {
+  width: 800px;
+  min-height: 400px;
+  margin: 40px auto 60px;
+}
+.page-tabs__graph img {
+  max-width: 100%;
+}
+@media screen and (max-width: 1279px) {
+  .page-tabs__graph {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .page-tabs__graph {
+    width: 400px;
+    margin: 40px auto;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .page-tabs__graph {
+    width: 400px;
+    margin: 80px auto;
+  }
+}

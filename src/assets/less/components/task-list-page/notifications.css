@@ -1,0 +1,123 @@
+.notifications {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 6.59%;
+  z-index: 999999;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .notifications {
+    padding: 0 4.59%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .notifications {
+    padding: 0 4.59%;
+  }
+}
+.notifications__message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  border-radius: 2px;
+  box-shadow: -15.6px 9px 30.7px 1.3px rgba(0, 0, 0, 0.2);
+  border: solid 1px #ffffff;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .notifications__message {
+    height: 62px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .notifications__message {
+    height: 62px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .notifications__message p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .notifications__message p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .notifications__message {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .notifications__message {
+    max-width: 100%;
+  }
+}
+.notifications__message--success {
+  background-color: #1ABC9C;
+}
+.notifications__message--error {
+  background-color: #F75C4C;
+}
+.notifications__message--warning {
+  background-color: #ffaa34;
+}
+.notifications__message--info {
+  background-color: #59ABE3;
+}
+.notifications__message .notifications__icon {
+  width: 100%;
+  max-width: 66px;
+  text-align: center;
+  font-size: 34px;
+  color: #ffffff;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .notifications__message .notifications__icon {
+    font-size: 40px;
+    line-height: 62px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .notifications__message .notifications__icon {
+    font-size: 40px;
+    line-height: 62px;
+  }
+}
+.notifications__message .notifications__content {
+  width: 100%;
+  color: #ffffff;
+  padding-left: 13px;
+}
+.notifications__message .notifications__close {
+  width: 100%;
+  max-width: 50px;
+  text-align: center;
+}
+.notifications__message .notifications__close button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 24px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .notifications__message .notifications__close button {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .notifications__message .notifications__close button {
+    font-size: 28px;
+  }
+}

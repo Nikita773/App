@@ -1,0 +1,87 @@
+.tasks--removed .tasks__item {
+  border-left: none;
+}
+.tasks--removed .tasks__item .tasks__remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 7.02%;
+  min-width: 86px;
+  position: relative;
+  background-color: #C8C8C8;
+}
+@media screen and (max-width: 1279px) {
+  .tasks--removed .tasks__item .tasks__remove {
+    min-width: 114px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks--removed .tasks__item .tasks__remove {
+    min-width: 101px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks--removed .tasks__item .tasks__remove {
+    min-width: 84px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks--removed .tasks__item .tasks__remove {
+    min-width: 80px;
+  }
+}
+.tasks--removed .tasks__item .tasks__remove .icon {
+  color: #ffffff;
+  font-size: 37px;
+}
+@media screen and (max-width: 1279px) {
+  .tasks--removed .tasks__item .tasks__remove .icon {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks--removed .tasks__item .tasks__remove .icon {
+    font-size: 40px;
+  }
+}
+.tasks--removed .tasks__item--hobby {
+  border-color: #B470D0;
+}
+.tasks--removed .tasks__item--hobby .tasks__remove {
+  background-color: #B470D0;
+}
+.tasks--removed .tasks__item--sport {
+  border-color: #E16C65;
+}
+.tasks--removed .tasks__item--sport .tasks__remove {
+  background-color: #E16C65;
+}
+.tasks--removed .tasks__item--work {
+  border-color: #FFB200;
+}
+.tasks--removed .tasks__item--work .tasks__remove {
+  background-color: #FFB200;
+}
+.tasks--removed .tasks__item--education {
+  border-color: #59ABE3;
+}
+.tasks--removed .tasks__item--education .tasks__remove {
+  background-color: #59ABE3;
+}
+.tasks--removed .tasks__item--other {
+  border-color: #00D4D9;
+}
+.tasks--removed .tasks__item--other .tasks__remove {
+  background-color: #00D4D9;
+}
+.tasks--removed .tasks__item .tasks__content {
+  padding-left: 11px;
+}
+.page-tabs--removed .page-tabs__links {
+  display: flex;
+  justify-content: space-between;
+}
+.page-tabs--removed .page-tabs__links .left-col .page-tabs__link:first-child {
+  padding-left: 0;
+}

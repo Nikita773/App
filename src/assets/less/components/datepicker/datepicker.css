@@ -1,0 +1,15 @@
+/* helpers */
+.ui-datepicker {
+  background: #253d4f;
+}
+.ui-datepicker th {
+  color: #ffffff;
+}
+.ui-datepicker td > a {
+  background: #7F7F7F;
+}
+.ui-datepicker .ui-state-active {
+  background: #82C7E0;
+  border-color: #82C7E0;
+  color: #ffffff;
+}

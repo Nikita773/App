@@ -1,0 +1,72 @@
+/* helpers */
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins";
+
+.left-col {
+    display: none;
+    float: left;
+}
+.left-col > a:nth-child(1) {
+    padding-left: 0;
+}
+
+.remove-mode {
+    .global-list .page-tabs__content {
+        margin-top: 50px;
+    }
+    .left-col {
+        display: block;
+    }
+    .tasks__date {
+        display: none;
+    }
+    .menu__link--trash {
+        color: @white;
+    }
+    .menu__list .menu__link.menu__link--trash .trash-count {
+        opacity: 1;
+    }
+    .tasks__item {
+        border-left: none;
+
+        .tasks__remove {
+            .taskItemElementsSettings;
+            display: flex;
+            position: relative;
+            background-color: @silver;
+
+            .icon {
+                color: @white;
+                font-size: 37px;
+
+                .media-tablet({
+                    font-size: 50px;
+                });
+                .media-phone-landscape({
+                    font-size: 40px;
+                });
+            }
+        }
+
+        &--hobby {
+            .taskItemCategorySettings(@hobbyColor);
+        }
+        &--sport {
+            .taskItemCategorySettings(@sportColor);
+        }
+        &--work {
+            .taskItemCategorySettings(@workColor);
+        }
+        &--education {
+            .taskItemCategorySettings(@educationColor);
+        }
+        &--other {
+            .taskItemCategorySettings(@otherColor);
+        }
+
+        .tasks__content {
+            padding-left: 11px;
+        }
+    }  
+    
+}

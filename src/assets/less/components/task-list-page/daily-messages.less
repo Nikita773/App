@@ -1,0 +1,58 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.daily-task-message {
+    text-align: center;
+    padding-top: 44px;
+    padding-bottom: 24px;
+    .media-tablet({
+        margin-bottom: 90px;
+    });
+
+    &--disabled {
+        display: none;
+    }
+    &--medium-spacer {
+        padding: 80px 0;
+    }
+    &--big-spacer {
+        padding: 126px 0;
+    }
+
+    .daily-task-message__message {
+        color: @nepal;
+        margin-bottom: 30px;
+    }
+    
+    
+    .icon {
+        font-size: 60px;
+        color: @nepal;
+    }
+    img {
+        max-width: 164px;
+        margin-bottom: 70px;
+        .media-tablet({
+            max-width: 200px;
+        });
+    }
+}
+
+.daily-task-message--first-task, .daily-task-message--any {
+    .media-portreit({
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    });
+    .media-phone-landscape({
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    });
+}

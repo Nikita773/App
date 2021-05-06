@@ -1,0 +1,477 @@
+.tasks__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 92px;
+  background-color: #ffffff;
+  border-left: 11px solid #7F7F7F;
+  margin: 9px 0;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item {
+    height: 114px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item {
+    height: 114px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item {
+    height: 87px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item {
+    height: 121px;
+  }
+}
+.tasks__item .tasks__date {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 7.02%;
+  min-width: 86px;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__date {
+    min-width: 114px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__date {
+    min-width: 101px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__date {
+    min-width: 84px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__date {
+    min-width: 80px;
+  }
+}
+.tasks__item .tasks__date p {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9F9F9F;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__date p {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__date p {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__date p {
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__date p {
+    font-size: 11px;
+  }
+}
+.tasks__item .tasks__date p .number {
+  display: block;
+  font-size: 27px;
+  line-height: 22px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__date p .number {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__date p .number {
+    font-size: 29px;
+  }
+}
+.tasks__item .tasks__date p.overdue {
+  color: #F75C4C;
+}
+.tasks__item .tasks__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.tasks__item .tasks__content h3 {
+  color: #7F7F7F;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__content h3 {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+}
+.tasks__item .tasks__content p {
+  color: #7F7F7F;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__content p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__content p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__content p {
+    font-size: 17px;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__content p {
+    font-size: 15px;
+  }
+}
+.tasks__item .tasks__content-box h3 {
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__content-box h3 {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__content-box h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__content-box h3 {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__content-box h3 {
+    font-size: 24px;
+  }
+}
+.tasks__item .tasks__edit {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 7.02%;
+  min-width: 86px;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__edit {
+    min-width: 114px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__edit {
+    min-width: 101px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__edit {
+    min-width: 84px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__edit {
+    min-width: 80px;
+  }
+}
+.tasks__item .tasks__edit button {
+  font-size: 19px;
+  color: #C8C8C8;
+  cursor: pointer;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__edit button {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__edit button {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__edit button {
+    font-size: 19px;
+  }
+}
+.tasks__item .tasks__edit button:hover {
+  color: #88a3b5;
+}
+.tasks__item .tasks__edit button:hover .tooltip {
+  display: block;
+  left: 30px;
+  bottom: -20px;
+  z-index: 10;
+}
+.tasks__item .tasks__status {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 7.02%;
+  min-width: 86px;
+  background-color: #7F7F7F;
+  cursor: pointer;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__status {
+    min-width: 114px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__status {
+    min-width: 101px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__status {
+    min-width: 84px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__status {
+    min-width: 80px;
+  }
+}
+.tasks__item .tasks__status .icon {
+  font-size: 48px;
+  color: #ffffff;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__status .icon {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__status .icon {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__status .icon {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__status .icon {
+    font-size: 48px;
+  }
+}
+.tasks__item .tasks__status .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+@media screen and (max-width: 1279px) {
+  .tasks__item .tasks__status .number {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .tasks__item .tasks__status .number {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tasks__item .tasks__status .number {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tasks__item .tasks__status .number {
+    font-size: 24px;
+  }
+}
+.tasks__item .tasks__status .icon::before {
+  content: "\E913";
+  width: 48px;
+  height: 48px;
+}
+.tasks__item .tasks__status:hover .icon::before {
+  content: "\E90E";
+}
+.tasks__item .tasks__status:hover .number {
+  display: none;
+}
+.tasks__item .tasks__status:hover .tooltip {
+  display: block;
+  left: 50px;
+  bottom: -25px;
+  z-index: 10;
+}
+.tasks__item .tasks__disabler {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  width: 7.02%;
+  min-width: 114px;
+}
+.tasks__item--overdue .tasks__date p {
+  color: #F75C4C;
+}
+.tasks__item--hobby {
+  border-color: #B470D0;
+}
+.tasks__item--hobby .tasks__remove {
+  background-color: #B470D0;
+}
+.tasks__item--sport {
+  border-color: #E16C65;
+}
+.tasks__item--sport .tasks__remove {
+  background-color: #E16C65;
+}
+.tasks__item--work {
+  border-color: #FFB200;
+}
+.tasks__item--work .tasks__remove {
+  background-color: #FFB200;
+}
+.tasks__item--education {
+  border-color: #59ABE3;
+}
+.tasks__item--education .tasks__remove {
+  background-color: #59ABE3;
+}
+.tasks__item--other {
+  border-color: #00D4D9;
+}
+.tasks__item--other .tasks__remove {
+  background-color: #00D4D9;
+}
+.tasks__item--urgent-status .tasks__status {
+  background-color: #F75C4C;
+}
+.tasks__item--urgent-status .tasks__content-box h3 {
+  color: #F75C4C;
+}
+.tasks__item--urgent-status .tasks__content-box h3:before {
+  background-color: #F75C4C;
+}
+.tasks__item--high-status .tasks__status {
+  background-color: #FFA841;
+}
+.tasks__item--high-status .tasks__content-box h3 {
+  color: #FFA841;
+}
+.tasks__item--high-status .tasks__content-box h3:before {
+  background-color: #FFA841;
+}
+.tasks__item--middle-status .tasks__status {
+  background-color: #FDDC43;
+}
+.tasks__item--middle-status .tasks__content-box h3 {
+  color: #FDDC43;
+}
+.tasks__item--middle-status .tasks__content-box h3:before {
+  background-color: #FDDC43;
+}
+.tasks__item--low-status .tasks__status {
+  background-color: #1ABC9C;
+}
+.tasks__item--low-status .tasks__content-box h3 {
+  color: #1ABC9C;
+}
+.tasks__item--low-status .tasks__content-box h3:before {
+  background-color: #1ABC9C;
+}
+.tasks__item .tasks__remove {
+  display: none;
+}
+.tasks--done .tasks__item {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.tasks--done .tasks__item .tasks__edit {
+  visibility: hidden;
+}
+.tasks--done .tasks__content-box h3 {
+  position: relative;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+}
+@media screen and (max-width: 1279px) {
+  .tasks--done .tasks__content-box h3 {
+    font-size: 23px;
+  }
+}
+.tasks--done .tasks__content-box h3:before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+}
+.filter {
+  max-width: 50%;
+  margin-left: auto;
+}
+@media screen and (max-width: 1279px) {
+  .filter {
+    max-width: 73%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .filter {
+    max-width: 73%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .filter {
+    max-width: 73%;
+  }
+}
+.tasks__target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .section-tasklist .container .page-tabs--main .page-tabs__links {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .section-tasklist .container .page-tabs--main {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .section-tasklist .container .page-tabs--main {
+    padding-top: 50px;
+  }
+}

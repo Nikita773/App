@@ -1,0 +1,104 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.categories {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 32px 0;
+    .media-tablet({
+        padding: 140px 0 32px 0;
+    });
+    .media-phone-landscape({
+        padding: 50px 0 32px 0;
+    });  
+}
+
+.categories__list {
+    width: 245px;
+    .media-tablet({
+        width: 398px;
+    });
+    .media-portreit({
+        width: 450px;
+    });
+
+    .categories__item {
+        margin-bottom: 15px;
+        border-bottom: 1px solid @slate;
+        padding: 10px 0;
+
+        .categories__link {
+            color: @nepal;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            .media-tablet({
+                font-size: 19px;
+            });
+        }
+    }
+}
+
+.categories__list--decorated {
+    padding-left: 16px;
+    
+    .categories__item {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: -38px;
+            border-radius: 50%;
+            width: 17px;
+            height: 17px;
+            background-color: @grey;
+        }
+    }
+    .categories__item--work:before {
+        background-color: @workColor;
+    }
+    .categories__item--education:before {
+        background-color: @educationColor;
+    }
+    .categories__item--hobby:before {
+        background-color: @hobbyColor;
+    }
+    .categories__item--sport:before {
+        background-color: @sportColor;
+    }
+    .categories__item--other:before {
+        background-color: @otherColor;
+    }
+}
+
+.buttons {
+    &--categories-page {
+        .media-tablet({
+            padding-top: 170px;
+        });
+        .media-phone-landscape({
+            padding-top: 35px;
+        }); 
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+.settings__value {
+    text-align: center;
+    background: transparent;
+    border: none;
+}

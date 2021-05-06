@@ -1,0 +1,113 @@
+.opacity (@opacity: 0.5) {
+  -webkit-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}
+
+.fontStyle(@fontFamily, @fontSize, @fontWeight, @lineHeight, @textTransform) {
+  font-family: @fontFamily;
+  font-size: @fontSize;
+  font-weight: @fontWeight;
+  line-height: @lineHeight;
+  text-transform: @textTransform;
+}
+
+.timerSettings() {
+  .time {
+    text-align: center;
+  }
+  .time__number {
+    display: block;
+    font-size: 75px;
+    line-height: 100px;
+    margin-top: -10px;
+  }
+  .time__label {
+    display: block;
+    font-size: 24px;
+  }
+}
+
+.taskItemElementsSettings() {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 7.02%;
+  min-width: 86px;
+
+  .media-tablet({
+    min-width: 114px;
+  });
+  .media-tablet-landscape({
+    min-width: 114px;
+  });
+  .media-phone-landscape({
+    min-width: 87px;
+  });
+  .media-portreit({
+    min-width: 90px;
+  });
+
+  
+}
+
+.taskItemCategorySettings(@color) {
+  border-color: @color;
+
+  .tasks__remove {
+    background-color: @color;
+  }
+}
+
+.statusSettings(@color) {
+  .tasks__status {
+    background-color: @color;
+  }
+  .tasks__content-box {
+    h3 {
+      color: @color;
+
+      &:before {
+        background-color: @color;
+      }
+    }
+  }
+}
+
+.popupColSettings(@justify) {
+  width: 50%;
+  display: flex;
+  justify-content: @justify;
+}
+
+.media-portreit(@rules) {
+	@media screen and (max-width: @screen-phone) and (orientation: portrait) {
+		@rules();
+	}
+}
+
+.media-phone-landscape(@rules) {
+  @media screen and (max-width: @screen-phone) and (orientation: landscape) {
+    @rules();
+  }
+}
+
+.media-tablet-landscape(@rules) {
+  @media screen and (max-width: @screen-tablet) and (orientation: landscape) {
+    @rules();
+  }
+}
+
+.media-tablet(@rules) {
+	@media screen and (max-width: (@screen-tablet - 1px)) {
+		@rules();
+  }
+}
+
+.media-desktop(@rules) {
+	@media screen and (min-width: @screen-desktop) {
+		@rules();
+	}
+}

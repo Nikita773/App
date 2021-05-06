@@ -1,0 +1,180 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.global-list {
+    padding: 22px 0;
+
+    .tasks {
+        position: relative;
+        margin-bottom: 23px;
+        margin-top: 26px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 18px;
+            bottom: 0;
+            width: 11px;
+            background-color: @silver;            
+        }
+        
+        &--work-category {
+            h3 {
+                color: @selectiveYellow;
+
+                &:before {
+                    background-color: @selectiveYellow;
+                }
+            }
+            &:before {
+                background-color: @selectiveYellow;
+            }
+        }
+
+        &--sport-category {
+            h3 {
+                color: @terraCotta;
+
+                &:before {
+                    background-color: @terraCotta;
+                }
+            }
+            &:before {
+                background-color: @terraCotta;
+            }
+        }
+
+        &--hobby-category {
+            h3 {
+                color: @amethyst;
+
+                &:before {
+                    background-color: @amethyst;
+                }
+            }
+            &:before {
+                background-color: @amethyst;
+            }
+        }
+
+        &--education-category {
+            h3 {
+                color: @malibu;
+
+                &:before {
+                    background-color: @malibu;
+                }
+            }
+            &:before {
+                background-color: @malibu;
+            }
+        }
+
+        &--other-category {
+            h3 {
+                color: @darkTurquoise;
+
+                &:before {
+                    background-color: @darkTurquoise;
+                }
+            }
+            &:before {
+                background-color: @darkTurquoise;
+            }
+        }
+
+        .tasks__item {
+            .tasks__edit {
+                flex-direction: column;
+    
+                button {
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+
+    .tasks__remove {
+        display: none;
+    }
+
+    .tasks__content-box h3 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .left-col {
+        margin-top: 35px;
+    }
+}
+
+.global-list__trigger {
+    position: relative;
+    top: 23px;
+    z-index: 10;
+    font-size: 20px;
+    color: @nepal;
+    font-weight: 600;
+    .media-tablet({
+        font-size: 24px;
+        top: 30px;
+    });
+    .media-tablet-landscape({
+        font-size: 24px;
+        top: 30px;
+    });
+    .media-portreit({
+        top: 29px;
+    });
+    .media-phone-landscape({
+        top: 32px;
+    });
+
+    .icon {
+        position: relative;
+        top: -1px;
+        font-size: 10px;
+    }
+}
+
+.global-list__trigger:hover .tooltip {
+    display: block;
+    left: 70px;
+    bottom: -45px;
+}
+
+.global-list__category-title {
+    position: relative;
+    color: @white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 29px;
+    margin-bottom: 19px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: -3px;
+        top: 3px;
+        z-index: 10;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        background-color: @white;
+    }
+    &:after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        left: 1px;
+        top: 7px;
+        z-index: 10;
+        border-radius: 50%;
+        width: 9px;
+        height: 9px;
+        background-color: transparent;
+        border: 2px solid @madison;
+    }
+}

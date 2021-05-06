@@ -1,0 +1,111 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.notifications {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 6.59%;
+    z-index: 999999;
+
+    .media-portreit({
+        padding: 0 4.59%;
+    });
+    .media-phone-landscape({
+        padding: 0 4.59%;
+    });
+}
+.notifications__message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 50px;
+    border-radius: 2px;
+    box-shadow: -15.6px 9px 30.7px 1.3px rgba(0, 0, 0, 0.2);
+    border: solid 1px @white;
+    .media-phone-landscape({
+        height: 62px;
+    });
+    .media-portreit({
+        height: 62px;
+    });
+
+    p {
+        .media-phone-landscape({
+            font-size: 22px;
+        });
+        .media-portreit({
+            font-size: 22px;
+        });
+    }
+
+    .media-phone-landscape({
+        max-width: 100%;
+    });
+    .media-portreit({
+        max-width: 100%;
+    });
+
+    &--success {
+        background-color: @notificationSuccess;
+    }
+    &--error {
+        background-color: @notificationError;
+    }
+    &--warning {
+        background-color: @notificationWarning;
+    }
+    &--info {
+        background-color: @notificationInfo;
+    }
+
+    .notifications__icon {
+        width: 100%;
+        max-width: 66px;
+        text-align: center;
+        font-size: 34px;
+        color: @white;
+        line-height: 50px;
+        background: rgba(255,255,255,.2);
+        .media-phone-landscape({
+            font-size: 40px;
+            line-height: 62px;
+        });
+        .media-portreit({
+            font-size: 40px;
+            line-height: 62px;
+        });
+    }
+    .notifications__content {
+        width: 100%;
+        color: @white;
+        padding-left: 13px;
+    }
+    .notifications__close {
+        width: 100%;
+        max-width: 50px;
+        text-align: center;
+        
+        button {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 24px;
+            color: @white;
+
+            .media-phone-landscape({
+                font-size: 28px;
+            });
+            .media-portreit({
+                font-size: 28px;
+            });
+        }
+    }
+}

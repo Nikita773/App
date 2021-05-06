@@ -1,0 +1,128 @@
+<section class="section-settings">
+
+                <div class="container">
+
+                    <div class="page-info">
+                        <h1 class="page-info__title">Settings</h1>
+                    </div>
+
+                    <!--PAGE TABS-->
+
+                    <div class="page-tabs">
+
+                        <!--PAGE TABS LINKS-->
+
+                        <div class="page-tabs__links">
+                            <a class="page-tabs__link page-tabs__link--pomodoros page-tabs__link--active" href="/settings/pomodoros">Pomodoros</a>
+                            <a class="page-tabs__link page-tabs__link--categories" href="/settings/categories">Categories</a>
+                        </div>
+
+                        <!--PAGE TABS END-->
+                        <!--PAGE TABS CONTENT-->
+
+                        <div class="page-tabs__content page-tabs__content--active">
+                            <div class="page-info">
+                                <h3 class="page-info__subtitle"> Pomodoros settings </h3>
+                            </div>
+                            <div class="settings">
+                                <div class="settings__item settings__item--decorated settings__item--time">
+                                    <div class="settings__config">
+                                        <p class="settings__caption"> Work time </p>
+                                        <div id="work_time" class="settings__counter settings__counter--time">
+                                            <button class="settings__btn settings__btn--minus">
+                                            <span class="icon-minus"></span>
+                                        </button>
+                                        <button class="settings__btn settings__btn--plus">
+                                            <span class="icon-add"></span>
+                                        </button>
+                                            <div class="quantity"><input class="settings__value settings__value--work-time" type="number" step="5" min="15" max="25"></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <p> Please select a value between 15 and 25 <span>minutes</span> </p>
+                                </div>
+                                <div class="settings__item settings__item--decorated settings__item--iteration">
+                                    <div class="settings__config">
+                                        <p class="settings__caption">Work iteration</p>
+                                        <div id="work_iterations" class="settings__counter settings__counter--iterations">
+                                            <button class="settings__btn settings__btn--minus">
+                                            <span class="icon-minus"></span>
+                                        </button>
+                                        <button class="settings__btn settings__btn--plus">
+                                            <span class="icon-add"></span>
+                                        </button>
+                                            <div class="quantity"><input class="settings__value settings__value--iterations" type="number" step="1" min="2" max="5"></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <p> Please select a value between 2 and 5 <span>iteration</span> </p>
+                                </div>
+                                <div class="settings__item settings__item--decorated settings__item--short-break">
+                                    <div class="settings__config">
+                                        <p class="settings__caption"> Short break </p>
+                                        <div id="short_break" class="settings__counter settings__counter--sbreak">
+                                            <button class="settings__btn settings__btn--minus">
+                                            <span class="icon-minus"></span>
+                                        </button>
+                                        <button class="settings__btn settings__btn--plus">
+                                            <span class="icon-add"></span>
+                                        </button>
+                                            <div class="quantity"><input class="settings__value settings__value--sbreak" type="number" step="1" min="3" max="5"></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <p> Please select a value between 3 and 5 <span>minutes</span> </p>
+                                </div>
+                                <div class="settings__item settings__item--decorated settings__item--long-break">
+                                    <div class="settings__config">
+                                        <p class="settings__caption"> Long break</p>
+                                        <div id="long_break" class="settings__counter settings__counter--lbreak">
+                                            <button class="settings__btn settings__btn--minus">
+                                            <span class="icon-minus"></span>
+                                        </button>
+                                        <button class="settings__btn settings__btn--plus">
+                                            <span class="icon-add"></span>
+                                        </button>
+                                            <div class="quantity"><input class="settings__value settings__value--lbreak" type="number" step="5" min="15" max="30"></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <p> Please select a value between 15 and 30 <span>minutes</span> </p>
+                                </div>
+                            </div>
+                            <div class="cycle">
+                                <h3 class="cycle__title">Your cycle</h3>
+
+                                <div class="cycle__container"></div>
+                                <!--
+                                <div class="cycle__period">
+                                    <span class="cycle__point">
+                                    <p class="cycle__text cycle__text--begin">0m</p>
+                                <span class="cycle__dot"></span>
+                                    </span>
+                                    <span class="cycle__point cycle__point--first-cycle-time">
+                                    <p class="cycle__text cycle__text">1h 20m</p>
+                                <span class="cycle__dot"></span>
+                                    </span>
+                                    <span class="cycle__point">
+                                    <p class="cycle__text cycle__text--end">5h 20m</p>
+                                <span class="cycle__dot"></span>
+                                    </span>
+                                </div>
+                                <div class="cycle__bar"></div>
+                                <div class="cycle__timeline"></div>
+                                -->
+                            </div>
+                            <div class="buttons">
+                                <a href="/task-list" class="buttons__btn buttons__btn--solid buttons__btn--solid-dark-sky-blue"> Go to Tasks </a>
+                                <button class="buttons__btn buttons__btn--save-settings buttons__btn--solid buttons__btn--solid-topaz"> Save </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--PAGE TABS END-->
+
+                </div>
+
+            </section>

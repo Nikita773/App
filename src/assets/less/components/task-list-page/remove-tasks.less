@@ -1,0 +1,63 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.tasks--removed {
+    .tasks__item {
+        border-left: none;
+
+        .tasks__remove {
+            .taskItemElementsSettings;
+            position: relative;
+            background-color: @silver;
+
+            .icon {
+                color: @white;
+                font-size: 37px;
+
+                .media-tablet({
+                    font-size: 50px;
+                });
+
+                .media-phone-landscape({
+                    font-size: 40px;
+                });
+            }
+        }
+
+        &--hobby {
+            .taskItemCategorySettings(@hobbyColor);
+        }
+        &--sport {
+            .taskItemCategorySettings(@sportColor);
+        }
+        &--work {
+            .taskItemCategorySettings(@workColor);
+        }
+        &--education {
+            .taskItemCategorySettings(@educationColor);
+        }
+        &--other {
+            .taskItemCategorySettings(@otherColor);
+        }
+
+        .tasks__content {
+            padding-left: 11px;
+        }
+    }
+}
+
+.page-tabs--removed {
+    .page-tabs__links {
+        display: flex;
+        justify-content: space-between;
+
+        .left-col {
+            .page-tabs__link {
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+

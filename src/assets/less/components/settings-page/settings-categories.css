@@ -1,0 +1,99 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 32px 0;
+}
+@media screen and (max-width: 1279px) {
+  .categories {
+    padding: 140px 0 32px 0;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .categories {
+    padding: 50px 0 32px 0;
+  }
+}
+.categories__list {
+  width: 245px;
+}
+@media screen and (max-width: 1279px) {
+  .categories__list {
+    width: 398px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .categories__list {
+    width: 450px;
+  }
+}
+.categories__list .categories__item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #425869;
+  padding: 10px 0;
+}
+.categories__list .categories__item .categories__link {
+  color: #8DA5B8;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+@media screen and (max-width: 1279px) {
+  .categories__list .categories__item .categories__link {
+    font-size: 19px;
+  }
+}
+.categories__list--decorated {
+  padding-left: 16px;
+}
+.categories__list--decorated .categories__item {
+  position: relative;
+}
+.categories__list--decorated .categories__item:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -38px;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  background-color: #7F7F7F;
+}
+.categories__list--decorated .categories__item--work:before {
+  background-color: #FFB200;
+}
+.categories__list--decorated .categories__item--education:before {
+  background-color: #59ABE3;
+}
+.categories__list--decorated .categories__item--hobby:before {
+  background-color: #B470D0;
+}
+.categories__list--decorated .categories__item--sport:before {
+  background-color: #E16C65;
+}
+.categories__list--decorated .categories__item--other:before {
+  background-color: #00D4D9;
+}
+@media screen and (max-width: 1279px) {
+  .buttons--categories-page {
+    padding-top: 170px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .buttons--categories-page {
+    padding-top: 35px;
+  }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.settings__value {
+  text-align: center;
+  background: transparent;
+  border: none;
+}

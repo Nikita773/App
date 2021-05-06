@@ -1,0 +1,74 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.global-list__content--remove {
+    .page-tabs__links {
+        margin-top: 28px;
+        .media-portreit({
+            margin-top: 0;
+        });
+    }
+
+    .tasks__item {
+        border: none;
+    }
+    .tasks__content {
+        padding-left: 11px;
+    }
+    .tasks__remove {
+        .taskItemElementsSettings;
+        position: relative;
+        background-color: @silver;
+        
+        .icon {
+            color: @white;
+            font-size: 37px;
+
+            .media-tablet({
+                font-size: 50px;
+            });
+            .media-phone-landscape({
+                font-size: 40px;
+            });
+        }
+    }
+    
+    .tasks--hobby-category {
+        .taskItemCategorySettings(@hobbyColor);
+    }
+    .tasks--sport-category {
+        .taskItemCategorySettings(@sportColor);
+    }
+    .tasks--work-category {
+        .taskItemCategorySettings(@workColor);
+    }
+    .tasks--education-category {
+        .taskItemCategorySettings(@educationColor);
+    }
+    .tasks--other-category {
+        .taskItemCategorySettings(@otherColor);
+    }
+
+    .right-col {
+        margin-top: -38px;
+
+        .media-portreit({
+            display: block;
+            width: 100%;
+            margin-top: -9px;
+        });
+    }
+    .left-col {
+        .media-portreit({
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin-top: 25px;
+        });
+    }
+    .page-tabs__links {
+        .media-portreit({
+            flex-direction: column-reverse;
+        });        
+    }
+}

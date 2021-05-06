@@ -1,0 +1,42 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.section-report__tabs {
+    .media-phone-landscape({
+        padding-top: 30px;
+    });
+    .media-portreit({
+        padding-top: 30px;
+    });
+
+    .page-tabs--internal {
+        margin-bottom: 50px;
+    }
+}
+
+.section-report__tabs {
+    .page-tabs__links {
+        text-align: center;
+    }
+}
+.page-tabs__graph {
+    width: 800px;
+    min-height: 400px;
+    margin: 40px auto 60px;
+
+    img {
+        max-width: 100%;
+    }
+    .media-tablet({
+        width: 600px;
+    });
+    .media-phone-landscape({
+        width: 400px;
+        margin: 40px auto;
+    });
+    .media-portreit({
+        width: 400px;
+        margin: 80px auto;
+    });
+}
+

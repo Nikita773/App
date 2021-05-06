@@ -1,0 +1,60 @@
+
+<div class="page-tabs__content page-tabs__content--todo page-tabs__content--active">
+    <div class="page-tabs__links">
+        <div class="left-col">
+            <a class="page-tabs__link select-all-daily" href="javascript:void(0);">Select All</a>
+            <a class="page-tabs__link deselect-all-daily" href="javascript:void(0);">Deselect All</a>
+        </div>
+        <div class="right-col">
+            <a class="page-tabs__link page-tabs__link--active" href="javascript:void(0);">To Do</a>
+            <a class="page-tabs__link" href="javascript:void(0);">Done</a>
+        </div>
+    </div>
+    
+    <div class="daily-task-message daily-task-message--drag-drop disabled">
+        <p class="message daily-task-message__message">Task added,
+            <br>drag it to the top 5 indaily task list</p>
+        <span class="icon icon-arrow_circle"></span>
+    </div>
+    <div class="daily-task-message daily-task-message--tasks-done disabled">
+        <p class="message daily-task-message__message">Excellent,
+            <br>all daily tasks done! :)</p>
+    </div>
+
+    <ul class="tasks tasks--todo">
+
+        {{#each this}}
+
+        <li id="{{id}}" class="tasks__item tasks__item--{{category}} tasks__item--{{priority}}-status">
+            <div class="tasks__remove">
+            <div class="tasks__target"></div>
+                <span class="icon icon-trash"></span>
+        </div>
+            <div class="tasks__date">
+
+                <p>Today</p>
+                
+            </div>
+            <div class="tasks__content">
+                <div class="tasks__content-box">
+                    <h3>{{title}}</h3>
+                    <p>{{description}}</p>
+                </div>
+            </div>
+            <div class="tasks__edit">
+                <button class="edit-btn" title="Edit task">
+                    <span class="icon-edit"></span>
+                </button>
+            </div>
+            <div class="tasks__status">
+                <a href="/timer" title="Go to timer">
+                    <span class="icon icon-tomato"></span>
+                    <span class="number">{{estimation}}</span>
+                </a>
+            </div>
+        </li>
+
+        {{/each}}
+
+    </ul>
+</div>

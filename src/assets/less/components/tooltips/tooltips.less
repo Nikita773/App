@@ -1,0 +1,30 @@
+@import (reference) "../../helpers/_variables.less";
+@import (reference) "../../helpers/_mixins.less";
+
+.ui-tooltip {
+    display: inline-block;
+    position: absolute;
+    left: -1em;
+    z-index: 999;
+    width: max-content;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 0.2rem;
+    background: @tooltipColor;
+    font-size: 11px;
+    color: @slateTwo;
+    font-weight: 700;
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 15px;
+      z-index: 999;
+      height: 0;
+      width: 0;
+      border-left: 0.3rem solid transparent;
+      border-right: 0.3rem solid transparent;
+      border-bottom: 0.4rem solid @tooltipColor;
+    }
+  }
